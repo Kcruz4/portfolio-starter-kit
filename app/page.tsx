@@ -59,6 +59,14 @@ export default function Page() {
 
           <p className="text-sm text-neutral-500">
             Impact: Improved understanding of operational inefficiencies
+            <div className="mt-3 flex gap-4 text-sm">
+  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
+    GitHub
+  </a>
+  <a href="https://TU-APP-DEPLOY.com" className="underline">
+    Live Demo
+  </a>
+</div>
           </p>
         </div>
 
@@ -80,6 +88,14 @@ export default function Page() {
 
           <p className="text-sm text-neutral-500">
             Impact: Enabled interactive data exploration for users
+            <div className="mt-3 flex gap-4 text-sm">
+  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
+    GitHub
+  </a>
+  <a href="https://TU-APP-DEPLOY.com" className="underline">
+    Live Demo
+  </a>
+</div>
           </p>
         </div>
 
@@ -111,6 +127,14 @@ export default function Page() {
 
         <p className="text-neutral-700">
           Python • SQL • Pandas • Machine Learning • Data Visualization • Streamlit • Git
+          <div className="mt-3 flex gap-4 text-sm">
+  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
+    GitHub
+  </a>
+  <a href="https://TU-APP-DEPLOY.com" className="underline">
+    Live Demo
+  </a>
+</div>
         </p>
       </div>
 
