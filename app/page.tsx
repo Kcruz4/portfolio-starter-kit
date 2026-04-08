@@ -1,133 +1,104 @@
+import { BlogPosts } from 'app/components/posts'
+
 export default function Page() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-12">
+    <section className="max-w-5xl mx-auto px-6 py-12">
 
       {/* HERO */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
+        <img
+          src="/profile-placeholder.png"
+          alt="Karen Cruz"
+          className="mx-auto rounded-full w-32 h-32 mb-4"
+        />
+        <h1 className="text-4xl font-bold tracking-tight mb-2">
           Karen Cruz
         </h1>
-
-        <p className="text-xl mb-3">
+        <p className="text-xl mb-2">
           Data Scientist | Python • SQL • Machine Learning
         </p>
-
         <p className="text-neutral-600 max-w-xl mx-auto">
           I analyze complex datasets to uncover patterns, build predictive models,
           and generate insights that improve business decision-making.
-        </p>
-
-        <div className="mt-4 text-sm text-neutral-500">
-          Data Analysis • Machine Learning • Business Insights
-        </div>
-      </div>
-
-      {/* ABOUT */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-
-        <p className="mb-3">
-          I’m a Data Scientist with experience in data analysis, machine learning,
-          and building data-driven applications.
-        </p>
-
-        <p>
-          I have worked on projects involving e-commerce analytics, predictive modeling,
-          and interactive dashboards.
         </p>
       </div>
 
       {/* PROJECTS */}
       <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-center">Projects</h2>
 
-        {/* PROJECT 1 */}
-        <div className="mb-8 border-b pb-6">
-          <h3 className="text-lg font-semibold">
-            Olist Operational Efficiency Analysis
-          </h3>
-
-          <ul className="list-disc ml-5 text-neutral-700 mt-3">
-            <li>Analyzed 100k+ e-commerce transactions to identify delivery bottlenecks</li>
-            <li>Detected high-risk payment patterns impacting revenue</li>
-            <li>Provided data-driven recommendations to improve logistics efficiency</li>
-          </ul>
-
-          <p className="text-sm text-neutral-500 mt-2">
-            Tools: Python, Pandas, SQL
-          </p>
-
-          <p className="text-sm text-neutral-500">
-            Impact: Improved understanding of operational inefficiencies
-          </p>
-
-          <div className="mt-3 flex gap-4 text-sm">
-            <a href="https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis" className="underline">
-              GitHub
-            </a>
+        <div className="grid gap-8 md:grid-cols-2">
+          
+          {/* PROJECT 1 */}
+          <div className="border rounded-lg shadow-sm p-6 hover:shadow-md transition">
+            <img
+              src="/olist-placeholder.png"
+              alt="Olist Project"
+              className="w-full h-40 object-cover rounded mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">Olist Operational Efficiency Analysis</h3>
+            <p className="text-neutral-600 mb-3">
+              Analyzed e-commerce logistics and payment data to identify bottlenecks and reduce risk.
+            </p>
+            <p className="text-sm text-neutral-500 mb-3">
+              Tools: Python, Pandas, SQL
+            </p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis" className="underline text-blue-600">
+                GitHub
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* PROJECT 2 */}
-        <div className="mb-8 border-b pb-6">
-          <h3 className="text-lg font-semibold">
-            Automotive Analytics Web App
-          </h3>
-
-          <ul className="list-disc ml-5 text-neutral-700 mt-3">
-            <li>Developed an interactive data app for vehicle analysis</li>
-            <li>Implemented filters and dynamic visualizations for user insights</li>
-            <li>Deployed a production-ready app using Streamlit</li>
-          </ul>
-
-          <p className="text-sm text-neutral-500 mt-2">
-            Tools: Streamlit, Python, Render
-          </p>
-
-          <p className="text-sm text-neutral-500">
-            Impact: Enabled interactive data exploration for users
-          </p>
-
-          <div className="mt-3 flex gap-4 text-sm">
-            <a href="https://github.com/Kcruz4/Automotive-Analytics-Webapp" className="underline">
-              GitHub
-            </a>
+          {/* PROJECT 2 */}
+          <div className="border rounded-lg shadow-sm p-6 hover:shadow-md transition">
+            <img
+              src="/automotive-placeholder.png"
+              alt="Automotive Analytics Web App"
+              className="w-full h-40 object-cover rounded mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">Automotive Analytics Web App</h3>
+            <p className="text-neutral-600 mb-3">
+              Built an interactive Streamlit app to explore vehicle data trends with filters and dynamic visualizations.
+            </p>
+            <p className="text-sm text-neutral-500 mb-3">
+              Tools: Streamlit, Python, Render
+            </p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Kcruz4/Automotive-Analytics-Webapp" className="underline text-blue-600">
+                GitHub
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* PROJECT 3 */}
-        <div className="mb-8 border-b pb-6">
-          <h3 className="text-lg font-semibold">
-            Vehicle Data Explorer
-          </h3>
-
-          <ul className="list-disc ml-5 text-neutral-700 mt-3">
-            <li>Cleaned and processed raw datasets for analysis</li>
-            <li>Explored correlations between key vehicle features</li>
-            <li>Built visualizations to communicate insights effectively</li>
-          </ul>
-
-          <p className="text-sm text-neutral-500 mt-2">
-            Tools: Python, Pandas, Matplotlib
-          </p>
-
-          <p className="text-sm text-neutral-500">
-            Impact: Delivered insights through clear data visualization
-          </p>
-
-          <div className="mt-3 flex gap-4 text-sm">
-            <a href="https://github.com/Kcruz4/VehicleDataExplorer" className="underline">
-              GitHub
-            </a>
+          {/* PROJECT 3 */}
+          <div className="border rounded-lg shadow-sm p-6 hover:shadow-md transition">
+            <img
+              src="/vehicle-placeholder.png"
+              alt="Vehicle Data Explorer"
+              className="w-full h-40 object-cover rounded mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">Vehicle Data Explorer</h3>
+            <p className="text-neutral-600 mb-3">
+              Cleaned and analyzed vehicle datasets to find patterns and deliver actionable insights through visualizations.
+            </p>
+            <p className="text-sm text-neutral-500 mb-3">
+              Tools: Python, Pandas, Matplotlib
+            </p>
+            <div className="flex gap-4">
+              <a href="https://github.com/Kcruz4/VehicleDataExplorer" className="underline text-blue-600">
+                GitHub
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
 
       {/* SKILLS */}
       <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-
-        <p className="text-neutral-700">
+        <h2 className="text-3xl font-semibold mb-4 text-center">Skills</h2>
+        <p className="text-neutral-700 text-center">
           Python • SQL • Pandas • Machine Learning • Data Visualization • Streamlit • Git
         </p>
       </div>
@@ -137,6 +108,9 @@ export default function Page() {
         <p className="text-neutral-600">
           📫 Connect with me on GitHub
         </p>
+        <a href="https://github.com/Kcruz4" className="underline text-blue-600">
+          GitHub Profile
+        </a>
       </div>
 
     </section>
