@@ -59,15 +59,13 @@ export default function Page() {
 
           <p className="text-sm text-neutral-500">
             Impact: Improved understanding of operational inefficiencies
-            <div className="mt-3 flex gap-4 text-sm">
-  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
-    GitHub
-  </a>
-  <a href="https://TU-APP-DEPLOY.com" className="underline">
-    Live Demo
-  </a>
-</div>
           </p>
+
+          <div className="mt-3 flex gap-4 text-sm">
+            <a href="https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis" className="underline">
+              GitHub
+            </a>
+          </div>
         </div>
 
         {/* PROJECT 2 */}
@@ -88,19 +86,17 @@ export default function Page() {
 
           <p className="text-sm text-neutral-500">
             Impact: Enabled interactive data exploration for users
-            <div className="mt-3 flex gap-4 text-sm">
-  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
-    GitHub
-  </a>
-  <a href="https://TU-APP-DEPLOY.com" className="underline">
-    Live Demo
-  </a>
-</div>
           </p>
+
+          <div className="mt-3 flex gap-4 text-sm">
+            <a href="https://github.com/Kcruz4/Automotive-Analytics-Webapp" className="underline">
+              GitHub
+            </a>
+          </div>
         </div>
 
         {/* PROJECT 3 */}
-        <div>
+        <div className="mb-8 border-b pb-6">
           <h3 className="text-lg font-semibold">
             Vehicle Data Explorer
           </h3>
@@ -118,6 +114,12 @@ export default function Page() {
           <p className="text-sm text-neutral-500">
             Impact: Delivered insights through clear data visualization
           </p>
+
+          <div className="mt-3 flex gap-4 text-sm">
+            <a href="https://github.com/Kcruz4/VehicleDataExplorer" className="underline">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
@@ -127,14 +129,6 @@ export default function Page() {
 
         <p className="text-neutral-700">
           Python • SQL • Pandas • Machine Learning • Data Visualization • Streamlit • Git
-          <div className="mt-3 flex gap-4 text-sm">
-  <a href="https://github.com/TU_USUARIO/TU_REPO" className="underline">
-    GitHub
-  </a>
-  <a href="https://TU-APP-DEPLOY.com" className="underline">
-    Live Demo
-  </a>
-</div>
         </p>
       </div>
 
