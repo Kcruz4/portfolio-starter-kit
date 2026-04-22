@@ -3,22 +3,22 @@ import Link from "next/link";
 export function BlogPosts() {
   const projects = [
     {
-      title: "Olist Operational Efficiency Analysis",
+      title: "EV Charging Demand Forecasting & Utilization Analytics",
       description:
-        "End-to-end analysis of e-commerce, fintech and logistics performance. Identified delivery delays, payment risk factors and high-risk product categories.",
-      link: "https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis",
-    },
-    {
-      title: "Automotive Analytics Web App",
-      description:
-        "Interactive web application for vehicle data analysis and visualization.",
-      link: "https://github.com/Kcruz4/Automotive-Analytics-Webapp",
+        "Forecasting EV charging demand using machine learning, SQL analytics, and real charging session data to support smarter infrastructure planning.",
+      link: "https://github.com/Kcruz4/ev-charging-demand-forecasting",
     },
     {
       title: "Vehicle Data Explorer",
       description:
-        "Exploratory data analysis project focused on uncovering patterns in vehicle datasets.",
+        "Interactive Streamlit dashboard exploring used vehicle pricing, mileage trends, and market insights with Plotly visualizations.",
       link: "https://github.com/Kcruz4/VehicleDataExplorer",
+    },
+    {
+      title: "Olist Operational Efficiency Analysis",
+      description:
+        "Business intelligence project analyzing e-commerce, fintech, and logistics performance to uncover operational risks and optimization opportunities.",
+      link: "https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis.",
     },
   ];
 
@@ -29,7 +29,7 @@ export function BlogPosts() {
           key={index}
           href={project.link}
           target="_blank"
-          className="flex flex-col space-y-1 mb-6"
+          className="flex flex-col space-y-1 mb-8"
         >
           <p className="text-neutral-900 dark:text-neutral-100 tracking-tight text-lg font-semibold">
             {project.title}
@@ -40,5 +40,7 @@ export function BlogPosts() {
         </Link>
       ))}
     </div>
+  );
+}
   );
 }
