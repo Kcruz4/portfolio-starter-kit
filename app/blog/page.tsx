@@ -1,15 +1,19 @@
-import { BlogPosts } from 'app/components/posts'
-
-export const metadata = {
-  title: 'Blog',
-  description: 'Read my blog.',
-}
+import { Projects } from 'app/components/Projects'
 
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Blog</h1>
-      <BlogPosts />
+      <h1 className="mb-8 text-3xl font-semibold tracking-tighter">
+        Karen Cruz
+      </h1>
+
+      <p className="mb-6 text-neutral-700 dark:text-neutral-300">
+        Data Analyst and Data Scientist focused on transforming data into business value through analytics, machine learning, forecasting, and interactive dashboards.
+      </p>
+
+      <div className="my-8">
+        <Projects />
+      </div>
     </section>
   )
 }
