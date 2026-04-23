@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Karen Cruz | Data Portfolio',
     template: '%s | Karen Cruz',
   },
-  description: description: 'Data Analyst and Data Scientist portfolio focused on analytics, forecasting, dashboards, and machine learning.',
+  description: 'Data Analyst and Data Scientist portfolio focused on analytics, forecasting, dashboards, and machine learning.',
   openGraph: {
     title: 'Karen Cruz Portfolio',
     description: 'This is my portfolio.',
