@@ -39,8 +39,8 @@ const skills = [
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#F8F7F3] text-[#1F2933]">
-      <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 py-20 md:flex-row md:py-28">
+    <main className="w-full min-h-screen bg-[#F8F7F3] text-[#1F2933] overflow-x-hidden">
+      <section className="mx-auto flex w-full max-w-7xlflex-col items-center gap-10 px-6 py-20 md:flex-row md:py-28">
         <div className="flex-1">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-[#6B8F71]">
             Data Analyst · Data Scientist
@@ -129,7 +129,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="projects" className="mx-auto w-full max-w-7xl px-6 py-16">
         <div className="mb-10">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#6B8F71]">
             Featured Work
@@ -171,7 +171,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
         <div className="rounded-[2rem] border border-[#E5E1D8] bg-white p-8 shadow-sm">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#6B8F71]">
             Toolkit
@@ -192,7 +192,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
         <div className="rounded-[2rem] bg-[#1F2933] p-8 text-white md:p-12">
           <h2 className="mb-4 text-3xl font-bold">Professional Summary</h2>
           <p className="max-w-3xl text-lg leading-relaxed text-[#E5E7EB]">
