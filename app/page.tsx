@@ -3,22 +3,25 @@ import Link from 'next/link'
 const projects = [
   {
     title: 'EV Charging Demand Forecasting',
+    impact: 'R² improved to 0.93',
     description:
-      'Forecasting EV charging demand using machine learning, SQL analytics, Tableau dashboards, and real charging session data.',
+      'Forecasted EV charging demand using machine learning, SQL analytics, Tableau dashboards, and real charging session data.',
     tech: ['Python', 'SQL', 'Tableau', 'Forecasting'],
     link: 'https://github.com/Kcruz4/ev-charging-demand-forecasting',
   },
   {
-    title: 'Olist Operational Efficiency Analysis',
+    title: 'Olist Operational Efficiency',
+    impact: '95K+ orders analyzed',
     description:
-      'Power BI dashboard analyzing logistics delays, payment risk, and operational performance across e-commerce and fintech data.',
+      'Power BI dashboard analyzing delivery delays, payment risk, revenue, and operational performance across e-commerce data.',
     tech: ['Power BI', 'Python', 'Business Analytics'],
     link: 'https://github.com/Kcruz4/E-commerce-Fintech-Logistics-Analysis.',
   },
   {
-    title: 'Used Vehicle Market Analytics App',
+    title: 'Used Vehicle Market Analytics',
+    impact: 'Live Streamlit app',
     description:
-      'Interactive Streamlit web application for exploring used vehicle pricing, mileage trends, and market insights.',
+      'Interactive web application for exploring used vehicle pricing, mileage trends, and market insights.',
     tech: ['Streamlit', 'Python', 'Plotly'],
     link: 'https://github.com/Kcruz4/Used-Vehicle-Market-Analytics-App',
   },
@@ -40,7 +43,7 @@ const skills = [
 export default function Page() {
   return (
     <main className="w-full min-h-screen bg-[#F8F7F3] text-[#1F2933] overflow-x-hidden">
-      <section className="mx-auto flex w-full max-w-7xlflex-col items-center gap-10 px-6 py-20 md:flex-row md:py-28">
+      <section className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 py-20 md:flex-row md:py-28">
         <div className="flex-1">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-[#6B8F71]">
             Data Analyst · Data Scientist
@@ -51,8 +54,8 @@ export default function Page() {
           </h1>
 
           <p className="mb-8 max-w-2xl text-xl leading-relaxed text-[#4B5563]">
-            Turning data into business decisions through analytics, forecasting,
-            dashboards, and data storytelling.
+            Transforming complex data into clear business decisions through
+            analytics, forecasting, dashboards, and data storytelling.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -70,6 +73,13 @@ export default function Page() {
             >
               LinkedIn
             </Link>
+
+            <Link
+              href="mailto:karencruz0404@gmail.com"
+              className="rounded-full border border-[#E5E1D8] px-6 py-3 text-sm font-semibold text-[#1F2933] transition hover:bg-white"
+            >
+              Email
+            </Link>
           </div>
         </div>
 
@@ -86,7 +96,7 @@ export default function Page() {
 
       <section
         id="about"
-        className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[360px_1fr]"
+        className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-16 md:grid-cols-[360px_1fr]"
       >
         <div className="mx-auto overflow-hidden rounded-[2rem] border border-[#E5E1D8] bg-white p-3 shadow-lg">
           <video
@@ -135,7 +145,7 @@ export default function Page() {
             Featured Work
           </p>
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Projects
+            Selected Projects
           </h2>
         </div>
 
@@ -147,6 +157,9 @@ export default function Page() {
               target="_blank"
               className="group rounded-3xl border border-[#E5E1D8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
+              <p className="mb-3 text-sm font-semibold text-[#6B8F71]">
+                {project.impact}
+              </p>
               <h3 className="mb-3 text-xl font-bold">{project.title}</h3>
               <p className="mb-5 text-sm leading-relaxed text-[#4B5563]">
                 {project.description}
@@ -192,14 +205,36 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+      <section id="contact" className="mx-auto w-full max-w-7xl px-6 py-16">
         <div className="rounded-[2rem] bg-[#1F2933] p-8 text-white md:p-12">
-          <h2 className="mb-4 text-3xl font-bold">Professional Summary</h2>
-          <p className="max-w-3xl text-lg leading-relaxed text-[#E5E7EB]">
-            Data Analyst and Data Scientist focused on transforming complex data
-            into clear business value through analytics, machine learning,
-            forecasting, dashboards, and operational insights.
+          <h2 className="mb-4 text-3xl font-bold">Let’s connect</h2>
+          <p className="mb-8 max-w-3xl text-lg leading-relaxed text-[#E5E7EB]">
+            I’m open to remote opportunities in data analytics, business
+            intelligence, and data science.
           </p>
+
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="mailto:karencruz0404@gmail.com"
+              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1F2933]"
+            >
+              Email Me
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/karencruz-datascientist/"
+              target="_blank"
+              className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white"
+            >
+              LinkedIn
+            </Link>
+            <Link
+              href="https://github.com/Kcruz4"
+              target="_blank"
+              className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white"
+            >
+              GitHub
+            </Link>
+          </div>
         </div>
       </section>
     </main>
