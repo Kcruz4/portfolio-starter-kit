@@ -4,6 +4,7 @@ const projects = [
   {
     title: 'EV Charging Demand Forecasting',
     impact: 'R² improved to 0.93',
+    image: '/ev-project.png',
     description:
       'Forecasted EV charging demand using machine learning, SQL analytics, Tableau dashboards, and real charging session data.',
     tech: ['Python', 'SQL', 'Tableau', 'Forecasting'],
@@ -12,6 +13,7 @@ const projects = [
   {
     title: 'Olist Operational Efficiency',
     impact: '95K+ orders analyzed',
+    image: '/olist-project.png',
     description:
       'Power BI dashboard analyzing delivery delays, payment risk, revenue, and operational performance across e-commerce data.',
     tech: ['Power BI', 'Python', 'Business Analytics'],
@@ -20,6 +22,7 @@ const projects = [
   {
     title: 'Used Vehicle Market Analytics',
     impact: 'Live Streamlit app',
+    image: '/vehicle-project.png',
     description:
       'Interactive web application for exploring used vehicle pricing, mileage trends, and market insights.',
     tech: ['Streamlit', 'Python', 'Plotly'],
@@ -117,9 +120,7 @@ export default function Page() {
 
           <p className="mb-6 text-lg leading-relaxed text-[#4B5563]">
             I am a data professional focused on analytics, business intelligence,
-            forecasting, and machine learning. My work combines technical skills
-            with business thinking to uncover patterns, improve performance, and
-            communicate insights clearly.
+            forecasting, and machine learning.
           </p>
 
           <div className="grid gap-4 sm:grid-cols-3">
@@ -144,6 +145,7 @@ export default function Page() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#6B8F71]">
             Featured Work
           </p>
+
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             Selected Projects
           </h2>
@@ -155,30 +157,42 @@ export default function Page() {
               key={project.title}
               href={project.link}
               target="_blank"
-              className="group rounded-3xl border border-[#E5E1D8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group overflow-hidden rounded-3xl border border-[#E5E1D8] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <p className="mb-3 text-sm font-semibold text-[#6B8F71]">
-                {project.impact}
-              </p>
-              <h3 className="mb-3 text-xl font-bold">{project.title}</h3>
-              <p className="mb-5 text-sm leading-relaxed text-[#4B5563]">
-                {project.description}
-              </p>
-
-              <div className="mb-6 flex flex-wrap gap-2">
-                {project.tech.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full bg-[#F1F3EE] px-3 py-1 text-xs font-medium text-[#55765B]"
-                  >
-                    {item}
-                  </span>
-                ))}
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <span className="text-sm font-semibold text-[#6B8F71]">
-                View project →
-              </span>
+              <div className="p-6">
+                <p className="mb-3 text-sm font-semibold text-[#6B8F71]">
+                  {project.impact}
+                </p>
+
+                <h3 className="mb-3 text-xl font-bold">{project.title}</h3>
+
+                <p className="mb-5 text-sm leading-relaxed text-[#4B5563]">
+                  {project.description}
+                </p>
+
+                <div className="mb-6 flex flex-wrap gap-2">
+                  {project.tech.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full bg-[#F1F3EE] px-3 py-1 text-xs font-medium text-[#55765B]"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                <span className="text-sm font-semibold text-[#6B8F71]">
+                  View project →
+                </span>
+              </div>
             </Link>
           ))}
         </div>
@@ -208,6 +222,7 @@ export default function Page() {
       <section id="contact" className="mx-auto w-full max-w-7xl px-6 py-16">
         <div className="rounded-[2rem] bg-[#1F2933] p-8 text-white md:p-12">
           <h2 className="mb-4 text-3xl font-bold">Let’s connect</h2>
+
           <p className="mb-8 max-w-3xl text-lg leading-relaxed text-[#E5E7EB]">
             I’m open to remote opportunities in data analytics, business
             intelligence, and data science.
@@ -220,6 +235,7 @@ export default function Page() {
             >
               Email Me
             </Link>
+
             <Link
               href="https://www.linkedin.com/in/karencruz-datascientist/"
               target="_blank"
@@ -227,6 +243,7 @@ export default function Page() {
             >
               LinkedIn
             </Link>
+
             <Link
               href="https://github.com/Kcruz4"
               target="_blank"
