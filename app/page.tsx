@@ -86,15 +86,17 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex-1">
-          <div className="mx-auto h-[360px] w-[280px] overflow-hidden rounded-[2rem] border border-[#E5E1D8] bg-white shadow-xl md:h-[430px] md:w-[330px]">
-            <Image src="/profile.jpg" />"
-              alt="Karen Cruz"
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+       <div className="flex-1">
+  <div className="mx-auto h-[360px] w-[280px] overflow-hidden rounded-[2rem] border border-[#E5E1D8] bg-white shadow-xl md:h-[430px] md:w-[330px]">
+    <Image
+      src="/profile.jpg"
+      alt="Karen Cruz"
+      width={330}
+      height={430}
+      className="h-full w-full object-cover"
+    />
+  </div>
+</div>
 
       <section
         id="about"
