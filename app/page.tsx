@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const projects = [
@@ -86,17 +87,19 @@ export default function Page() {
           </div>
         </div>
 
-       <div className="flex-1">
-  <div className="mx-auto h-[360px] w-[280px] overflow-hidden rounded-[2rem] border border-[#E5E1D8] bg-white shadow-xl md:h-[430px] md:w-[330px]">
-    <Image
-      src="/profile.jpeg"
-      alt="Karen Cruz"
-      width={330}
-      height={430}
-      className="h-full w-full object-cover"
-    />
-  </div>
-</div>
+        <div className="flex-1">
+          <div className="mx-auto h-[360px] w-[280px] overflow-hidden rounded-[2rem] border border-[#E5E1D8] bg-white shadow-xl md:h-[430px] md:w-[330px]">
+            <Image
+              src="/profile.jpeg"
+              alt="Karen Cruz"
+              width={330}
+              height={430}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
 
       <section
         id="about"
@@ -120,8 +123,8 @@ export default function Page() {
           </h2>
 
           <p className="mb-6 text-lg leading-relaxed text-[#4B5563]">
-            I am a data professional focused on analytics, business intelligence,
-            forecasting, and machine learning.
+            I am a data professional focused on analytics, business
+            intelligence, forecasting, and machine learning.
           </p>
 
           <div className="grid gap-4 sm:grid-cols-3">
@@ -129,10 +132,12 @@ export default function Page() {
               <p className="text-sm text-[#6B7280]">Location</p>
               <p className="font-semibold">Australia 🇦🇺</p>
             </div>
+
             <div className="rounded-2xl border border-[#E5E1D8] bg-white p-5">
               <p className="text-sm text-[#6B7280]">Focus</p>
               <p className="font-semibold">Data & BI</p>
             </div>
+
             <div className="rounded-2xl border border-[#E5E1D8] bg-white p-5">
               <p className="text-sm text-[#6B7280]">Open to</p>
               <p className="font-semibold">Remote roles</p>
